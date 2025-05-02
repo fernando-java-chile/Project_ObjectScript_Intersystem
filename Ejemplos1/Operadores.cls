@@ -110,13 +110,27 @@ ClassMethod EjemploAritmetica()
     set dos = "2,Caracol2"
     set tres = dos + "1"
     set cinco = dos + tres
-    write "2+3 = ", dos + tres, !
-    write "2-3 = ", dos - tres, !
-    write "2*3 = ", dos * tres, !
-    write "2**3 = ", dos ** tres, !
-    write "2/3 = ", dos / tres, !
-    write "5\3 = ", cinco \ tres, !
-    write "5#3 = ", cinco # tres, !
+    write "suma 2+3 = ", dos + tres, !
+    write "resta 2-3 = ", dos - tres, !
+    write "multiplicación 2*3 = ", dos * tres, !
+    write "Exponencial 2**3 = ", dos ** tres, !
+    write "División 2/3 = ", dos / tres, !
+    write "División Entera 5\3 = ", cinco \ tres, !
+    write "Resto 5#3 = ", cinco # tres, !
+}
+
+/// Método de ejemplo para ilustrar la precedencia de operadores aritméticos.
+/// Los calculos comienzan desde la izquierda y se evalúan en el orden de los operadores.
+/// ObjectScript la evaluación de operadores sigue estrictamente un orden de izquierda a derecha
+/// OMITE el principio de precedencia de operadores.
+/// ----- EJECURCION ------------------
+/// USER> do ##class(demo.Operadores).EjemploAritmetica2()
+ClassMethod EjemploAritmetica2()
+{
+
+    write 3 + 2 * 5 // 3 + 2 * 5 = 25   desde la izquierda no respeta los operadores 
+   // write 3 + (2 * 5) // 3 + 2 * 5 = 13  sí respeta los paréntesis
+   // write 5 * 3 + 2 // (5 * 3) + 2 = 17
 }
 
 }

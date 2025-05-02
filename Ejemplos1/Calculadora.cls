@@ -23,6 +23,11 @@ ClassMethod Sumar(a As %Double, b As %Double) As %Double
 /// 
 /// @param numero (ByRef %Integer) Una variable pasada por referencia. Al inicio del método, contiene
 ///               el valor inicial (si existe), y al final del método, contendrá un número aleatorio generado.
+/// 
+/// -----------------Ejemplo de uso----------------
+/// USER> set num = 5
+/// USER> do ##class(demo.Calculadora).DameUnNumeroAleatorio(.num) - Cuando se pasa por referencia, se usa el punto (.) antes del nombre de la variable.
+/// USER> write num - Muestra el número aleatorio generado
 ClassMethod DameUnNumeroAleatorio(ByRef numero As %Integer)
 {
     write "1.numero = "_numero,!
