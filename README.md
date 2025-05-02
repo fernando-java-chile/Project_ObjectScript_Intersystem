@@ -478,3 +478,55 @@ Desde el punto de vista del empleado el departamento es como un objeto relaciona
 | Count()                        | Contar elementos               | integer       |               |
 | Clear()                        | Vaciar relación        | 1             | error  status |
 
+
+#Cuestionario
+## ¿Qué elementos son NO sensibles a mayúsculas y minúsculas?
+  - Variables especiales
+  - Funciones
+  - Comandos
+
+## ¿Qué hace el comando "quit"?
+  - Terminar de un bloque de código
+
+## ¿Qué se escribirá en pantalla al ejecuar este método?
+
+
+```Objectscript
+    ClassMethod Ejemplo1(){
+        set verdadero = 1
+        set falso = @
+        if (verdadero || falso = 0) {
+            write "TRUE"
+        } else {
+          write "FALSE"
+        }
+      }
+```
+    
+  - FALSE 
+## ¿Qué función Objectscript permite realizar una decisión múltiple en función del valor de una variable?
+  - $CASE
+
+## ¿Qué función reemplaza carácter por carácter un String?
+    EJEMPLO: Cantamañanas POR Centeme-enes
+    - $TRANSLATE
+
+## ¿Cómo podemos establecer el tipo de datos de una variable con efectos informativos?
+  EJEMPLO: float int char lond double
+  - #dim
+
+## De los siguientes elementos ¿Cuales son elementos válidos de una clase?
+Objeto: Carro
+  Tiene:
+    Marca
+    Color
+    Modelo
+    Peso
+  Puede:
+    Encender
+    Acelerar
+    Frenar
+- Property
+- ClassMethod
+- Method
+- Parameter
