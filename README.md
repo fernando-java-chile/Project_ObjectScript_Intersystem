@@ -479,7 +479,7 @@ Desde el punto de vista del empleado el departamento es como un objeto relaciona
 | Clear()                        | Vaciar relación        | 1             | error  status |
 
 
-#Cuestionario
+# Cuestionario
 ## ¿Qué elementos son NO sensibles a mayúsculas y minúsculas?
   - Variables especiales
   - Funciones
